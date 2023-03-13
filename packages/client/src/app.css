@@ -1,0 +1,28 @@
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  width: 65%;
+  place-items: center;
+}
+
+#note-list {
+  height: 500px;
+  padding: 10px;
+}
+
+#note-list ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-auto-flow: column;
+}
+
+#note-list ul li {
+  width: 150px;
+  border: 1px solid royalblue;
+  border-radius: 10px;
+  margin: 5px auto;
+}
