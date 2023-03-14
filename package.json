@@ -7,7 +7,8 @@
   "license": "MIT",
   "homepage": "https://github.com/leuri17/notes#readme",
   "workspaces": [
-    "packages/client"
+    "packages/client",
+    "packages/server"
   ],
   "repository": {
     "type": "git",

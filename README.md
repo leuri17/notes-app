@@ -15,8 +15,10 @@ $PROJECT_ROOT
 │
 └── packages
     ├── client
-        └── src
-
+    │   └── src
+    │
+    └── server
+        └── models                  # Database models
 ```
 
 ## MIT License.
