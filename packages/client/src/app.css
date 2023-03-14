@@ -7,8 +7,9 @@
 }
 
 #note-list {
-  height: 500px;
+  height: 50vh;
   padding: 10px;
+  overflow: auto;
 }
 
 #note-list ul {
@@ -16,13 +17,22 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(1fr, 5);
-  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 #note-list ul li {
+  display: flex;
+  flex-direction: column;
   width: 150px;
+  height: 150px;
   border: 1px solid royalblue;
-  border-radius: 10px;
-  margin: 5px auto;
+  border-radius: 5px;
+}
+
+#note-list ul li P {
+  max-width: 150px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
